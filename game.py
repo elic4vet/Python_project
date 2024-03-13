@@ -56,7 +56,7 @@ def run():
         high_scores = json.load(f)
         player_name = input('Enter your name: ')
         high_scores.append({'name': player_name, 'score': player_wins})
-        f.seek(0)
+        f.seek(0)  
         json.dump(high_scores, f, indent=4)
 
 run()
