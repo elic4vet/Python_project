@@ -51,7 +51,7 @@ def run():
     print('Opponent Wins: {}'.format(opponent_wins))
     print('Total Rounds: {}'.format(rounds))
 
-    # Record high scores for players and store them in a file
+
     with open('high_scores.json', 'r+') as f:
         high_scores = json.load(f)
         player_name = input('Enter your name: ')
